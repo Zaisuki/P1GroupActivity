@@ -41,7 +41,7 @@ Students of Phinma UPang
 - MongoDB
 
 ### Hosting
-- Render
+- Vercel
 
 ### Version Control
 - GitHub

@@ -6,27 +6,26 @@
     width: 50%;
 }
 .container{
-    display: flex;
-    align-items: center;
     padding: 0%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18vw);
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
 
 }
-.row{
-    display: flex;
-    height: 88%;
-    
-}
-.col{
-    flex-basis: 50%;
+.card {
+    width: 16vw;
+    padding: 0.5em 0;
+    text-align: center;
 }
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: crimson;
     font-size: 50;
     text-align: center;
 }
 h4{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(0, 0, 0);
     font-size: 50;
     text-align: center;
@@ -35,7 +34,6 @@ p{
     color: black;
     font-size: 25;
     line-height: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 body{

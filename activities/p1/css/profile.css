@@ -31,11 +31,18 @@
     margin-top: 3%;
     position: static;
 }
-
-.card-body h5 {
+.card-body h2 {
     font-size: 40px;
 }
-
+.card-body h4 {
+    font-size: 22px;
+    margin-top: -1%;
+}
+.card-body h6 {
+    align-items: center;
+    margin-right: auto;
+    
+}
 
 
 

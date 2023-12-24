@@ -1,6 +1,7 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     display: flex;
+    width: 100vw;
 
 
 }
@@ -69,5 +70,6 @@ p{
 }
 .bg{
     background-color: rgb(0, 0, 0);
+    width: 100%;
 }
 

@@ -1,4 +1,23 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    display: flex;
 
+
+}
+.container-fluid
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50;
+    height: 10vh;
+    padding: 0 1.7rem;
+    color: antiquewhite;
+    overflow: hidden;
+    transition: all 0.5 linear;
+    background: rgb(255, 0, 0);
+}
 .center{
     display: block;
     margin-left: auto;
@@ -15,15 +34,22 @@
     justify-items: center;
 
 }
+.navbar-nav a:hover{
+    background: wheat;
+
+
+}
 .card {
     width: 16vw;
     padding: 0.5em 0;
     text-align: center;
+    margin: 0%;
+    background-color: orangered;
 }
 h1{
-    color: crimson;
+    color: orangered;
     font-size: 50;
-    text-align: center;
+    text-align: center; 
 }
 h4{
     color: rgb(0, 0, 0);
@@ -36,7 +62,12 @@ p{
     line-height: 15px;
     text-align: center;
 }
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    
+
+.orange{
+    width: 20;
+    position: fixed;
 }
+.bg{
+    background-color: rgb(0, 0, 0);
+}
+

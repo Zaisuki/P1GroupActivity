@@ -11,3 +11,39 @@
     border: 1px solid #EF9A9A;
     display: none;
 }
+
+.container-fluid {
+    height: 2%;
+    display: flex;
+    align-items: center; 
+    top: 0;
+    width: auto;
+    justify-content: space-between;
+    padding: 15px;
+    color: #e9e7e7;
+    background-color: rgb(255, 255, 255);
+}
+.navbar-nav a:hover{
+    background: wheat;
+}
+
+nav .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: #747474;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+nav ul{
+    float:right;
+}
+nav li{
+    display: inline-block;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30 px;
+}

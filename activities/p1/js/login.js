@@ -65,3 +65,12 @@ var loginVerify = localStorage.getItem("login");
 if (loginVerify === "true") {
     window.location.href = "dashboard.html";
 }
+let view = document.getElementById("view");
+
+view.onclick = function(){
+    if(password.type == "password"){
+        password.type = "text";
+    }else{
+        password.type= "password";
+    }
+}

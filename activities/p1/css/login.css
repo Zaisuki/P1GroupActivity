@@ -57,7 +57,7 @@ form{
 }
 .input-box i{
     position: absolute;
-    top: 50%;
+    top: 34%;
     right: 1.5%;
     transform: translate(-50%);
     font-size: 23px;

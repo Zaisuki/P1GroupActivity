@@ -8,8 +8,6 @@
 }
 
 body{
-    display: flex;
-    justify-content: center;
     min-height: 100vh;
     background: black;
 }
@@ -24,11 +22,14 @@ form{
     position: inherit;
 }
 .wrapper{
-    width: 600px;
+    width: 100vw;
     color: beige;
     border-radius: 12px;
     padding: 30px 40px;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .wrapper h1{

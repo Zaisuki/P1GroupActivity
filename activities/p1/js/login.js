@@ -1,11 +1,13 @@
 var username = document.forms['form']['username'];
 var password = document.forms['form']['password'];
+var submitForm = document.forms['form']['submitForm'];
 
 var username_error = document.getElementById("username_error");
 var pass_error = document.getElementById("pass_error");
 
-username.addEventListener('textInput', usernameVerify);
-password.addEventListener('textInput', passVerify);
+username.addEventListener('change', usernameVerify);
+password.addEventListener('change', passVerify);
+submitForm.addEventListener('click', validated);
 
 var totoongTao = {
     username: "MemberNgPHub",
@@ -13,12 +15,9 @@ var totoongTao = {
 };
 
 var json = JSON.stringify(totoongTao);
-localStorage.setItem(totoongTao, json);
 
 function validated(e) {
-    var user = localStorage.getItem(totoongTao);
-    var data = JSON.parse(user);
-    console.log(data);
+    var data = JSON.parse(json);
 
     if(username.value != data.username) {
         username.value.border = "1px solid red";
@@ -33,10 +32,9 @@ function validated(e) {
         password.focus();
         return false;
     }
-
-    if(username == data.username && password == data.password) {
+    if(username.value == data.username && password.value == data.password) {
+        // TODO: save in localstorage
         window.location.href = "dashboard.html";
-        console.log("Logged in");
     }
 }
 
@@ -45,6 +43,9 @@ function usernameVerify() {
         username.value.border = "1px solid silver";
         username_error.style.display = "none";
         return true;
+    } else {
+        username.value.border = "1px solid red";
+        username_error.style.display = "block";
     }
 }
 
@@ -53,5 +54,8 @@ function passVerify() {
         password.value.border = "1px solid silver";
         pass_error.style.display = "none";
         return true;
+    } else {
+        password.value.border = "1px solid red";
+        pass_error.style.display = "block";
     }
 }

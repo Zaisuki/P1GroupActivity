@@ -1,3 +1,4 @@
+// Log In
 var username = document.forms['form']['username'];
 var password = document.forms['form']['password'];
 var submitForm = document.forms['form']['submitForm'];
@@ -33,7 +34,7 @@ function validated(e) {
         return false;
     }
     if(username.value == data.username && password.value == data.password) {
-        // TODO: save in localstorage
+        localStorage.setItem("login", "true");
         window.location.href = "dashboard.html";
     }
 }
@@ -58,4 +59,9 @@ function passVerify() {
         password.value.border = "1px solid red";
         pass_error.style.display = "block";
     }
+}
+
+var loginVerify = localStorage.getItem("login");
+if (loginVerify === "true") {
+    window.location.href = "dashboard.html";
 }

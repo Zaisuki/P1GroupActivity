@@ -30,7 +30,12 @@
     justify-content: center;
     align-items: center;
 }
-
+.profile-exp-1200{
+    display: block;
+}
+.profile-exp-700{
+    display: none;
+}
 @media (max-width: 576px){
     .card-body h4 {
         font-size: 16px;
@@ -46,16 +51,19 @@
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp {
-        
-    }
+
     
 }
  @media (min-width: 992px) {
 
 }
 @media (min-width: 1200px) {
-
+    .profile-exp-1200{
+        display: none;
+    }
+    .profile-exp-700{
+        display: block;
+    }
 }
 @media (min-width: 1400px) {
 

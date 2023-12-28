@@ -41,15 +41,35 @@ nav .navbar-brand {
 }
 .profile-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.border-grey{
+    border: 15px solid #6C757D;
+}
+.profile-image img{
+    width: 70%
+}
 .profile-exp-1200{
     display: block;
+    
+    border-right: 15px solid #484e52;
+    border-left: 15px solid #484e52;
 }
 .profile-exp-700{
     display: none;
     
+}
+.work-experience-content {
+    padding: 0 15px;
+}
+
+.border-grey-work-experience{
+    text-align: center;
+    color: white;
+    margin: 0;
+    background-color:  #484e52;
 }
 @media (max-width: 576px){
     .card-body h4 {
@@ -86,12 +106,12 @@ nav .navbar-brand {
 
 }
 @media (min-width: 1200px) {
-    .profile-exp-1200{
+    /* .profile-exp-1200{
         display: none;
     }
     .profile-exp-700{
         display: block;
-    }
+    } */
 }
 @media (min-width: 1400px) {
 

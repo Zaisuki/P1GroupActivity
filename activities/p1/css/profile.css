@@ -1,14 +1,28 @@
+@font-face {
+    font-family: "wrestling";
+    src: url('activities/p1/css/wrestling.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav .navbar-brand {
+    font-family: 'wrestling';
+}
+
 .card {
     display: block;
-    margin-left: 4%;
+    margin-left: 5%;
     margin-right: auto;
     width: 90%;
-    margin-top: 4%;
+    margin-top: 5%;
     position: static;
 }
 .card-body h2 {
+    font-family: 'ghibo';
     font-size: 40px;
 }
+
 .card-body h4 {
     font-size: 22px;
     margin-top: -1%;
@@ -35,6 +49,7 @@
 }
 .profile-exp-700{
     display: none;
+    
 }
 @media (max-width: 576px){
     .card-body h4 {
@@ -43,6 +58,14 @@
     .card-body h2 {
         font-size: 30px;
     }
+    .profile-exp-1200 h4 {
+        font-size: 16px;
+    }
+    .profile-exp-1200 span {
+        font-size: 10px;
+
+    }
+    
 }
 @media (min-width: 768px) { 
     .card-body h4 {
@@ -51,7 +74,12 @@
     .card-body h2 {
         font-size: 30px;
     }
-
+    .profile-exp-1200 h4 {
+        font-size: 18px;
+    }
+    .profile-exp-1200 span {
+        font-size: 10px;
+    }
     
 }
  @media (min-width: 992px) {
@@ -68,7 +96,6 @@
 @media (min-width: 1400px) {
 
 }
-
 
 
 

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'wrestle';
+    src: url(fonts/wrestling.ttf);
+    font-style: normal;
+    font-weight: 200;
+}
 
 .navbar {
     padding: 10px;
@@ -23,7 +29,6 @@ nav .navbar-brand{
     cursor: pointer;
 }
 
-
 .navbar-nav {
     margin-left: auto;
 }
@@ -33,18 +38,35 @@ nav .navbar-brand{
 }
 .navbar-nav ul li{
     display: inline-block;
+    
 }
+
 .navbar-nav ul li a{
+    font-family: wrestle;
     font-size: 18px;
-    text-transform: uppercase;
     color: white;
+    font-weight: 200;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: grey;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-nav a:hover{
-    background: rgb(255, 255, 255);
-    border-radius: 25px
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color:  #747474;
+}
+
+.indicator {
+    padding: 1px 10px;
+    border-radius: 10px;
+    background: #747474;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

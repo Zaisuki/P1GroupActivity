@@ -8,15 +8,19 @@
 }
 form{
     background-color: black;
-    padding: 20px 45px 20px 20px;
+    padding: 30px 45px 20px 20px;
     border-radius: 12px;
     width: 700px;
+    height: 600px;
+    margin-left: 800px;
+    margin-top: 40px;
     
 }
 .error{
     width: 100%;
     display: flex;
     justify-content: center;
+    font-size: 1px;
 }
 
 .wrapper{
@@ -31,14 +35,15 @@ form{
     
 }
 .wrapper h1{
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     height: 70px;
+    margin-top: 25px;
 }
 .wrapper .input-box{
     position: relative;
     width: 100%;
-    margin: 15px 0 ;
+    margin: 10px 0 ;
 }
 
 .input-box input{
@@ -47,24 +52,15 @@ form{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgb(255, 255, 255, .2);
+    border: 7px solid rgb(255, 255, 255, .2);
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
-    padding: 20px 45px 20px 20px;
+    padding: 30px 45px 20px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-.input-box input::placeholder{
-    color: white;
-}
-.input-box i{
-    position: absolute;
-    top: 34%;
-    right: 1.5%;
-    transform: translate(-50%);
-    font-size: 23px;
-    cursor: pointer;
 
-}
 .wrapper .login-btn{
     width: 100%;
     height: 65px;
@@ -76,13 +72,27 @@ form{
     box-shadow: 0 0 10px rgba(0, 0, o, .1);
     cursor: pointer;
     font-size: 30px;
-    margin-top: 15px;
+    margin-top: 50px;
+    margin-left: 20px;
+    position: sticky;
 }
 .wrapper .login-btn:hover{
     background: rgb(68, 68, 68);
     border-radius: 40px
-
 }
+.input-box input::placeholder{
+    color: white;
+}
+.input-box i{
+    position: absolute;
+    top: 48%;
+    left: 600px;
+    transform: translate(-50%);
+    font-size: 23px;
+    cursor: pointer;
+}
+
+
 .login_form #username_error, 
 .login_form #pass_error {
     margin-top: 5px;

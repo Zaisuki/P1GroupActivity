@@ -11,6 +11,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -20,6 +21,7 @@ main{
     /* height: 88%; */
     align-items: center;
     justify-content: center;
+    position: absolute;
 
 }
 .col{
@@ -247,6 +249,42 @@ form{
     display: none;
 }
 
+
+@media (max-width: 600px) {
+    .row {
+        display: absolute;
+        text-align: center;
+        margin-top: -55vh;
+        position: relative;
+    }
+    .row h1 {
+        margin-top: 20%;
+        font-size: 45px;
+        margin-left: 25vh;
+    }
+    .row h2 {
+        font-size: 45px;
+        margin-left: 25vh;
+    }
+    .row p {
+        font-size: 10px;
+        margin-left: 30%;
+        justify-content: revert;
+        
+    }
+    .hold {
+        margin-top: 150vh;
+        height: auto;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+}
+
+@media (min-width: 993px) {
+}
 
 
 

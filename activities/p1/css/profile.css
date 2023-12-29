@@ -4,26 +4,25 @@ nav .navbar-brand {
 }
 
 .card {
-    display: block;
-    margin-left: 5%;
-    margin-right: auto;
-    width: 90%;
-    margin-top: 5%;
-    position: static;
+    margin-top: 5vh;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
 }
-
-.card-body {
-    background-color: black;
-    
+.row {
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
-.card-body h2 {
-    font-family: 'ghibo';
-    font-size: 40px;
+.card-body div, .card-body p {
+    padding: 5vw;
+    background-color: white;
+    /* border-radius: 15px; */
 }
-
-.card-body h4 {
-    font-size: 22px;
-    margin-top: -1%;
+.card-body p{
+    margin-bottom: 5vw;
 }
 .card-body h6 {
     align-items: center;
@@ -39,90 +38,77 @@ nav .navbar-brand {
     
 }
 .profile-image {
+    background-color: white;
+    padding: 3vw;
+    /* border-radius: 15px; */
+    width: 35%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
 }
-
-.border-grey{
-    border: 15px solid #000000;
+.profile-image-container{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid gray;
+}
+.profile-description{
+    width: 50%
 }
 .profile-image img{
     width: 100%
-    }
+}
 .profile-exp-1200{
-    display: block;
-    
-    border-right: 15px solid #000000;
-    border-left: 15px solid #000000;
+    display: none;
+
 }
 .profile-exp-700{
-    display: none;
-    
-    
+    display: block;
 }
 .work-experience-content {
     padding: 15px 15px;
 
 }
 
-.border-grey-work-experience{
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin: 0;
-    background-color:  #288ccf;
-}
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .card-body h4 {
         font-size: 16px;
     }
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp-1200 h4 {
+    .profile-exp-700 h4 {
         font-size: 16px;
     }
-    .profile-exp-1200 span {
+    .profile-exp-700 span {
         font-size: 10px;
     }
-    .profile-exp profile-exp-1200{
-        background-color: blueviolet;
-
-    }
-
-@media (min-width: 768px) 
-
-{ 
+}
+@media (max-width: 768px) { 
     .card-body h4 {
         font-size: 18px;
     }
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp-1200 h4 {
+    .profile-exp-700 h4 {
         font-size: 30px;
     }
-    .profile-exp-1200 span {
+    .profile-exp-700 span {
         font-size: 20px;
     }
-    
-}
- @media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-    /* .profile-exp-1200{
-        display: none;
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .profile-exp-700{
-        display: block;
-    } */
+    .profile-image{
+        width: 70%;
+        text-align: center;
+    }
+    
+    .profile-description{
+        width: 90%
+    }
 }
-@media (min-width: 1400px) {
-
-}
-
-
-

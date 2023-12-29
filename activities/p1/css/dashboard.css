@@ -5,18 +5,21 @@
     
 }
 
-@font-face {
-    font-family: "wrestling";
-    src: url('wrestling.ttf') format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@400;500;600&display=swap');
+
 
 footer {
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(40, 34, 78);
+    
 }
-.card-footer:hover {
-    color: black ;
+
+.card-footer a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    
+}
+.card-footer a:hover {
+    color: rgb(0, 0, 0);
 
 }
 
@@ -38,21 +41,41 @@ footer {
     background-color: rgb(255, 255, 255);
     
 }
-h1{
-    font-family: 'wrestling';
-    color: rgb(255, 255, 255);
-    font-size: 50;
+.card-body p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: 100;
+}
+.card-body h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 90;
     text-align: center; 
 }
-h4{
+.card-body h4{
     color: rgb(0, 0, 0);
-    font-size: 50;
+    font-size: 15px;
     text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-p{
-    font-family: 'wrestling';
-    color: rgb(158, 158, 158);
-    font-size: 25;
+
+
+
+
+.dashb h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 90;
+    text-align: center; 
+}
+
+.dashb p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
     line-height: 15px;
     text-align: center;
     font-weight: 100;

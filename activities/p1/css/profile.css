@@ -1,31 +1,28 @@
-@font-face {
-    font-family: "wrestling";
-    src: url('activities/p1/css/wrestling.ttf') format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
 
 nav .navbar-brand {
     font-family: 'wrestling';
 }
 
 .card {
-    display: block;
-    margin-left: 5%;
-    margin-right: auto;
-    width: 90%;
-    margin-top: 5%;
-    position: static;
+    margin-top: 5vh;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
 }
-.card-body h2 {
-    font-family: 'ghibo';
-    font-size: 40px;
+.row {
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
-
-.card-body h4 {
-    font-size: 22px;
-    margin-top: -1%;
+.card-body div, .card-body p {
+    padding: 5vw;
+    background-color: white;
+    /* border-radius: 15px; */
+}
+.card-body p{
+    margin-bottom: 5vw;
 }
 .card-body h6 {
     align-items: center;
@@ -38,11 +35,17 @@ nav .navbar-brand {
 }
 .card img {
     align-items: center;
+    
 }
 
 .profile-image {
+    background-color: white;
+    padding: 3vw;
+    /* border-radius: 15px; */
+    width: 35%;
+    height: fit-content;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -50,59 +53,56 @@ nav .navbar-brand {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
 .profile-exp-1200{
-    display: block;
+    display: none;
+
 }
 .profile-exp-700{
-    display: none;
-    
+    display: block;
 }
-@media (max-width: 576px){
+.work-experience-content {
+    padding: 15px 15px;
+
+}
+
+@media (max-width: 576px) {
     .card-body h4 {
         font-size: 16px;
     }
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp-1200 h4 {
+    .profile-exp-700 h4 {
         font-size: 16px;
     }
-    .profile-exp-1200 span {
+    .profile-exp-700 span {
         font-size: 10px;
-
     }
-    
 }
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
     .card-body h4 {
         font-size: 18px;
     }
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp-1200 h4 {
-        font-size: 18px;
+    .profile-exp-700 h4 {
+        font-size: 30px;
     }
-    .profile-exp-1200 span {
-        font-size: 10px;
+    .profile-exp-700 span {
+        font-size: 20px;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-image{
+        width: 70%;
+        text-align: center;
     }
     
-}
- @media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-    .profile-exp-1200{
-        display: none;
-    }
-    .profile-exp-700{
-        display: block;
+    .profile-description{
+        width: 90%
     }
 }
-@media (min-width: 1400px) {
-
-}
-
-
-

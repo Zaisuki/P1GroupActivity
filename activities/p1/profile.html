@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -15,67 +16,59 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Teletabbers</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <ul>
-              <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-              <li class="indicator"><a class="nav-link active" aria-current="page" href="#">Profile</a></li>
-              <li><a class="nav-link" href="login.html" id="login-btn">Login</a></li>
-            </ul>
+          <a class="navbar-brand" href="#">Teletabbers</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <ul>
+                    <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="indicator"><a class="nav-link active" aria-current="page" href="#">Profile</a></li>
+                    <li><a class="nav-link" href="login.html" id="login-btn">Login</a></li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </div>
-    </nav>
+  </nav>
+
     <div class="card mb-3">
       <div class="row g-0">
         <div class="profile-image col-md-4">
-          <img src="src/posa.jpg" class="rounded mx-auto d-block img-fluid" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
+            <div class="profile-image-container"> 
+                <img src="src/posa.jpg" class="main-profile-image" alt="...">
+            </div>
             <h2 class="card-title fw-bold">Kiffy Vernt N. Eegguh</h2>
             <h4 class="card-text"><small class="text-body-secondary">Software Engineer/Web Developer</small></h4>
-            <p class="card-text">Detail-oriented Software Engineer with 1 year of experience in the industry. Demonstrated expertise in various programming languages such as Java, Python, and C#.
+        </div>
+        <div class="profile-description col-md-8">
+          <div class="card-body">
+            <p class="card-text profile-main-description">Detail-oriented Software Engineer with 1 year of experience in the industry. Demonstrated expertise in various programming languages such as Java, Python, and C#.
               Proven ability to design and implement effective software solutions, with a strong emphasis on user experience and functionality. Familiar with agile and scrum methodologies, and
               experienced in working in cross-functional teams. Highly adaptable, analytical, and committed to continuous professional development.</p>
             <div class="profile-exp profile-exp-700">
               <h6 class="text-light text-bg-secondary p-1">WORK EXPERIENCE</h6>
-              <h4 style="text-align:left;"><small class="text-body-secondary"> Software Engineer at IT Inc. <span style="float:right;">May 2023 - Present</span></small>
-              </h4>
-              <ul>
-                <li>Led the development of a new data encryption software that improved system security by 70%, reducing potential cyber threats and vulnerabilities.</li>
-                <li>Implemented an automated testing system that reduced bugs in the final product by 60%, enhancing the overall software quality and performance.</li>
-              </ul>
-              <h4 style="text-align:left;"><small class="text-body-secondary"> Associate Software Engineer at Nikguh <span style="float:right;">Sep 2022 - Apr 2023</span></small>
-              </h4>
-              <ul>
-                <li>Developed and implemented an efficient code debugging process that reduced software downtime by 45%, significantly improving user experience and customer satisfaction.</li>
-                <li>Successfully led a team to revamp Nikguh's mobile application, resulting in a 35% increase in user engagement and a 20% increase in sales through the app within the first quarter
-                  of its launch.</li>
-              </ul>
+              <div class="work-experience-content">
+                <h4 style="text-align:left;">
+                  <small class="text-body-secondary"> Software Engineer at IT Inc. <span style="float:right;">May 2023 - Present</span></small>
+                </h4>
+                <ul>
+                  <li>Led the development of a new data encryption software that improved system security by 70%, reducing potential cyber threats and vulnerabilities.</li>
+                  <li>Implemented an automated testing system that reduced bugs in the final product by 60%, enhancing the overall software quality and performance.</li>
+                </ul>
+                <h4 style="text-align:left;">
+                  <small class="text-body-secondary"> Associate Software Engineer at Nikguh <span style="float:right;">Sep 2022 - Apr 2023</span></small>
+                </h4>
+                <ul>
+                  <li>Developed and implemented an efficient code debugging process that reduced software downtime by 45%, significantly improving user experience and customer satisfaction.</li>
+                  <li>Successfully led a team to revamp Nikguh's mobile application, resulting in a 35% increase in user engagement and a 20% increase in sales through the app within the first quarter
+                    of its launch.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="profile-exp profile-exp-1200">
-          <h6 class="text-light text-bg-secondary p-1">WORK EXPERIENCE</h6>
-          <h4 style="text-align:left;"><small class="text-body-secondary"> Software Engineer at IT Inc. <span style="float:right;">May 2023 - Present</span></small>
-          </h4>
-          <ul>
-            <li>Led the development of a new data encryption software that improved system security by 70%, reducing potential cyber threats and vulnerabilities.</li>
-            <li>Implemented an automated testing system that reduced bugs in the final product by 60%, enhancing the overall software quality and performance.</li>
-          </ul>
-          <h4 style="text-align:left;"><small class="text-body-secondary"> Associate Software Engineer at Nikguh <span style="float:right;">Sep 2022 - Apr 2023</span></small>
-          </h4>
-          <ul>
-            <li>Developed and implemented an efficient code debugging process that reduced software downtime by 45%, significantly improving user experience and customer satisfaction.</li>
-            <li>Successfully led a team to revamp Nikguh's mobile application, resulting in a 35% increase in user engagement and a 20% increase in sales through the app within the first quarter
-              of its launch.</li>
-          </ul>
         </div>
       </div>
     </div>

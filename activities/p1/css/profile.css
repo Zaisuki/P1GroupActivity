@@ -37,7 +37,6 @@ nav .navbar-brand {
     align-items: center;
     
 }
-
 .profile-image {
     background-color: white;
     padding: 3vw;
@@ -47,11 +46,18 @@ nav .navbar-brand {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.profile-image-container{
+    width: 50%;
+    overflow: hidden;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    border: 20px solid gray;
+}
+.profile-description{
+    width: 50%
+}
+.profile-image img{
+    width: 100%
 }
 .profile-exp-1200{
     display: none;

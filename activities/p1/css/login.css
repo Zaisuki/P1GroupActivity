@@ -12,49 +12,45 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 100vh;
 }
 
 
-.row{
+.row-login{
+    width: 100vw;
     display: flex;
-    width: 90%;
-    /* height: 88%; */
     align-items: center;
-    justify-content: center;
-    position: absolute;
+    justify-content: space-around;
 
 }
-.col{
-    width: 50%;
+.col-login{
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 1vw;
 }
-.col h1 {
+.col-login h1 {
     font-size: 70px;
-    margin-right: 120px;
 
 }
-.col h2 {
-    font-size: 90px;
-    margin-right: 125px;
+.col-login h2 {
+    font-size: 70px;
     color: #000000;
 }
 
 
-.col p {
+.col-login p {
     font-size: 18px;
-    margin-right: 90px;
     font-style: italic;
     text-align: justify;
 }
 .hold{
-    width:40%;
+    width: 35%;
     position: relative;
-    overflow: hidden;
     border-radius: 12px;
-   
+    overflow: hidden;
 }
 
 .hold::before {
@@ -62,7 +58,7 @@ main{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 540px;
+    width: 40%;
     height: 530px;
     background: linear-gradient(0deg, transparent, transparent, rgb(87, 74, 173), rgb(40, 34, 78), rgb(40, 34, 78));
     z-index: 0;
@@ -74,7 +70,7 @@ main{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 540px;
+    width: 40%;
     height: 530px;
     background: linear-gradient(0deg, transparent, transparent, rgb(87, 74, 173), rgb(40, 34, 78));
     z-index: -1;
@@ -86,14 +82,23 @@ main{
 form{
     position: relative;
     background-color: #000000;
-    padding: 30px 45px 20px 20px;
+    padding: 30px;
     border-radius: 12px;
-    width: 540px;
+    width: 95%;
     height: 530px;
     overflow: hidden;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.container{
+    max-height: 100%;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .error{
     width: 100%;
@@ -103,7 +108,7 @@ form{
 }
 
 .wrapper{
-    /* width: 100vw; */
+    width: 100%;
     background: transparent;
     border-radius: 12px;
     height: 550px;
@@ -118,7 +123,7 @@ form{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 540px;
+    width: 95%;
     height: 530px;
     background: linear-gradient(0deg, transparent, transparent, rgb(87, 74, 173), rgb(40, 34, 78), rgb(40, 34, 78));
     z-index: 0;
@@ -130,7 +135,7 @@ form{
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 540px;
+    width: 95%;
     height: 530px;
     background: linear-gradient(0deg, transparent, transparent, rgb(87, 74, 173), rgb(40, 34, 78));
     z-index: -1;
@@ -155,16 +160,18 @@ form{
     font-size: 30px;
     text-align: center;
     height: 50px;
-    margin-top: 25px;
-    margin-left: 35px;
+    margin: 0;
 }
 .wrapper .input-box{
     position: relative;
     width: 100%;
     margin: 10px 0 ;
 }
-
-.input-box1 input{
+.input-box1, .input-box2{
+    position: relative;
+    margin: 5px 0;
+}
+.input-box1 input, .input-box2 input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -175,36 +182,15 @@ form{
     font-size: 25px;
     color: white;
     padding: 25px 75px 10px 45px;
-    margin-top: 20px;
-    margin-left: 20px;
 }
-.input-box2 input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 3px solid rgb(255, 255, 255, .2);
-    border-radius: 9000px 90px;
-    font-size: 25px;
-    color: white;
-    padding: 25px 75px 10px 45px;
-    margin-top: 30px;
-    margin-left: 20px;
-}
-.input-box1 i{
+.input-box1 i, .input-box2 i{
     position: absolute;
-    top: 30%;
-    left: 84%;
+    top: 50%;
+    right: 10%;
     transform: translate(-50%);
     font-size: 16px;
 }
 .input-box2 i{
-    position: absolute;
-    top: 48%;
-    left: 84%;
-    transform: translate(-50%);
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -221,9 +207,8 @@ form{
     box-shadow: 0 0 10px rgba(0, 0, o, .1);
     cursor: pointer;
     font-size: 20px;
-    margin-top: 50px;
-    margin-left: 20px;
     position: sticky;
+    margin-top: 10px;
 }
 .wrapper .login-btn:hover{
     background: rgb(68, 68, 68);
@@ -238,7 +223,7 @@ form{
 .login_form #username_error, 
 .login_form #pass_error {
     margin-top: 5px;
-    width: 345px;
+    width: auto;
     font-size: 18px;
     color: #C62828;
     background: rgba(255,0,0,0.1);
@@ -247,44 +232,62 @@ form{
     border-radius: 3px;
     border: 1px solid #EF9A9A;
     display: none;
+    margin: 5px 0;
 }
 
 
 @media (max-width: 600px) {
-    .row {
-        display: absolute;
-        text-align: center;
-        margin-top: -55vh;
-        position: relative;
+    .row-login {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .row h1 {
-        margin-top: 20%;
+    .col-login{
+        width: 90%;
+    }
+    .input-box1, .input-box2{
+        width: 90%;
+    }
+    .input-box1 input, .input-box2 input{
+        font-size: 15px;
+        padding: 12px;
+    }
+    .hold{
+        width: 90vw;
+    }
+    .row-login h1 {
         font-size: 45px;
-        margin-left: 25vh;
     }
-    .row h2 {
+    .row-login h2 {
         font-size: 45px;
-        margin-left: 25vh;
     }
-    .row p {
+    .row-login p {
         font-size: 10px;
-        margin-left: 30%;
         justify-content: revert;
         
     }
-    .hold {
-        margin-top: 150vh;
-        height: auto;
+}
+
+@media  (min-width: 601px) and (max-width: 992px) {
+    .row-login {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-login{
+        width: 90vw;
+    }
+    .hold{
+        width: 70vw;
+    }
+    .wrapper{
         width: 100%;
-        position: absolute;
+    }
+    form{
+        width: 95%;
     }
 }
 
-@media (min-width: 601px) and (max-width: 992px) {
-}
-
-@media (min-width: 993px) {
-}
 
 
 

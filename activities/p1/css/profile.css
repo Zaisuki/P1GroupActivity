@@ -20,7 +20,7 @@
     padding: 0;
 }
 .card-body div, .card-body p {
-    padding: 4vw;
+    padding: 1vw 4vw 4vw 4vw;
     background-color: white;
     border-radius: 5px; 
 }
@@ -32,16 +32,11 @@
     
 
 }
-.card-body h6 {
+.card-body span {
     font-size: 20px;
     background-color: rgb(40, 34, 78);
-
-    
-    
-}
-.card-body span {
-    font-size: 12px;
-    color: black;
+    display: block;
+    font-style: normal;
 }
 .card img {
     align-items: center;

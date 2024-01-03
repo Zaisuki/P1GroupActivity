@@ -48,7 +48,7 @@ nav .navbar-brand {
     color: rgb(255, 255, 255);
 }
 
-.navbar-nav a:hover{
+.navbar-nav li a:hover{
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -56,7 +56,10 @@ nav .navbar-brand {
     -o-border-radius: 25px;
     color:  rgb(40, 34, 78);
 }
-
+.navbar-title{
+    margin: 0;
+    font-size: 40px;
+}
 .indicator {
     padding: 1px 10px;
     border-radius: 10px;

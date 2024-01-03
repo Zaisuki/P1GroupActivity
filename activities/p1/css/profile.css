@@ -1,7 +1,4 @@
 
-nav .navbar-brand {
-    font-family: 'wrestling';
-}
 
 .card {
     margin-top: 5vh;
@@ -31,7 +28,8 @@ nav .navbar-brand {
     margin-bottom: 5vw;
     font-size: 21.6px;
     font-style: italic;
-    text-align: center;
+    text-align: justify;
+
 }
 .card-body h6 {
     align-items: center;
@@ -48,7 +46,7 @@ nav .navbar-brand {
 }
 .profile-image {
     background-color: white;
-    padding: 3vw;
+    padding: 2.3vw;
     /* border-radius: 15px; */
     width: 35%;
     height: fit-content;
@@ -60,7 +58,7 @@ nav .navbar-brand {
     width: 50%;
     overflow: hidden;
     border-radius: 50%;
-    border: 20px solid gray;
+    border: 15px solid rgb(146, 146, 146);
 }
 .profile-description{
     width: 60%
@@ -76,8 +74,10 @@ nav .navbar-brand {
     display: block;
 }
 .work-experience-content {
-    padding: 15px 15px;
-
+    padding: 10px 1px;
+}
+.profile-exp profile-exp-700{
+    font-size: 100px;
 }
 
 @media (max-width: 576px) {

@@ -25,7 +25,7 @@ footer {
 
 
 .card-footer a {
-    color: rgb(40, 34, 78);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     
 }
@@ -47,10 +47,11 @@ footer {
 }
 .card {
     width: 350px;
-    padding: 0;
+    padding: 10px;
     text-align: center;
-    border-radius: 0;
-    background-color: rgb(140, 150, 182);
+    border-radius: 10px;
+    background-color: rgb(27, 1, 49);
+    
     
 }
 h1{
@@ -71,23 +72,27 @@ p{
 }
 .card-body p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    color: rgb(41, 2, 133);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     line-height: 15px;
     text-align: center;
     font-weight: 100;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .card-body h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(235, 227, 227);
     font-size: 90;
     text-align: center; 
 }
 .card-body h4{
-    color: rgb(0, 0, 0);
+    color: rgb(221, 221, 221);
     font-size: 15px;
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 
 
@@ -103,13 +108,14 @@ p{
 .jobs {
     display: block;
     width: 45%;
+    padding: 50px;
 }
 .jobs-700{
     display: none;
 }
 .dashb h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 50px;
 }
 
@@ -122,7 +128,7 @@ p{
 .dashb p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     color: rgb(255, 255, 255);
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     font-style: italic;
 }

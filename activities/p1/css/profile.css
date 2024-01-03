@@ -45,7 +45,9 @@
     align-items: center;
 
 }
-
+.text-color{
+    color: rgb(40, 34, 78);
+}
 .profile-image {
     background-color: white;
     padding: 2.3vw;

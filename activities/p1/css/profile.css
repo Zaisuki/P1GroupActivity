@@ -10,7 +10,7 @@
     justify-content: center;
 }
 .row {
-    min-height: 50vh;
+    min-height: 5vh;
     height: auto;
     width: 100%;
     display: flex;
@@ -22,13 +22,14 @@
 .card-body div, .card-body p {
     padding: 4vw;
     background-color: white;
-    /* border-radius: 15px; */
+    border-radius: 5px; 
 }
 .card-body p{
     margin-bottom: 5vw;
     font-size: 21.6px;
     font-style: italic;
     text-align: justify;
+    
 
 }
 .card-body h6 {
@@ -47,7 +48,7 @@
 .profile-image {
     background-color: white;
     padding: 2.3vw;
-    /* border-radius: 15px; */
+    border-radius: 5px; 
     width: 35%;
     height: fit-content;
     display: flex;
@@ -58,25 +59,28 @@
     width: 50%;
     overflow: hidden;
     border-radius: 50%;
-    border: 15px solid rgb(146, 146, 146);
+    border: 11px solid rgb(40, 34, 78);
 }
 .profile-description{
-    width: 60%
+    width: 60%;
+    
 }
 .profile-image img{
     width: 100%
 }
 .profile-exp{
-    margin-top: 5vw;
-    padding: 5%;
-    width: 90%;
+    margin-top: 2vw;
+    padding: 3%;
+    width: 97.5%;
     background-color: white;
+    border-radius: 5px;
     display: block;
 }
 .work-experience-content {
     padding: 10px 1px;
 }
 .profile-exp profile-exp-700{
+
     font-size: 100px;
 }
 
@@ -122,4 +126,8 @@
         height: fit-content;
         padding: 3vh;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+    
 }

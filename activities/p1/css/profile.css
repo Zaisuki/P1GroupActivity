@@ -84,12 +84,9 @@
     font-size: 100px;
 }
 
-@media (max-width: 576px) {
-    .card-body h4 {
+@media (max-width: 600px) {
+    .card-body p {
         font-size: 16px;
-    }
-    .card-body h2 {
-        font-size: 30px;
     }
     .profile-exp h4 {
         font-size: 16px;
@@ -97,14 +94,24 @@
     .profile-exp span {
         font-size: 10px;
     }
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-image{
+        width: 70%;
+        text-align: center;
+    }
+    
+    .profile-description{
+        margin-top: 1vh;
+        width: 100%;
+        height: fit-content;
+        padding: 3vh;
+    }
 }
-@media (max-width: 768px) { 
-    .card-body h4 {
-        font-size: 18px;
-    }
-    .card-body h2 {
-        font-size: 30px;
-    }
+@media (min-width: 601px) and (max-width: 992px) { 
     .profile-exp h4 {
         font-size: 30px;
     }
@@ -128,6 +135,6 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1080px) {
+@media (min-width: 993px) and (max-width: 1280px) {
     
 }

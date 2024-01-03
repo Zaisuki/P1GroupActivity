@@ -235,8 +235,50 @@ form{
     display: none;
     margin: 5px 0;
 }
-
-
+.forgot-password{
+    margin: 8px 55px 8px 0;
+    text-align: right;
+    cursor: pointer;
+    width: 100%;
+}
+.screen-overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(99, 99, 99, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-credentials-container{
+    position: relative;
+    width: fit-content;
+    background-color: #000000;
+    padding: 50px;
+    border-radius: 10px;
+}
+.login-credentials-container span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 18px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.login-credentials-container span:hover{
+    opacity: 0.3;
+}
+.login-credentials-container h2, .login-credentials-container p{
+    margin: 0;
+}
+.login-credentials-container label{
+    margin-bottom: 15px;
+}
+.login-credentials-container p, b{
+    font-size: 18px;
+}
 @media (max-width: 600px) {
     .row-login {
         flex-direction: column;

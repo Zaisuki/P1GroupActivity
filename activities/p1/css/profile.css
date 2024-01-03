@@ -8,21 +8,28 @@ nav .navbar-brand {
     width: 100%;
     background-color: transparent;
     border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .row {
-    min-height: 80vh;
+    min-height: 50vh;
     height: auto;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
+.card-body{
+    padding: 0;
+}
 .card-body div, .card-body p {
-    padding: 5vw;
+    padding: 4vw;
     background-color: white;
     /* border-radius: 15px; */
 }
 .card-body p{
     margin-bottom: 5vw;
+    font-size: 18px;
 }
 .card-body h6 {
     align-items: center;
@@ -35,7 +42,7 @@ nav .navbar-brand {
 }
 .card img {
     align-items: center;
-    
+
 }
 .profile-image {
     background-color: white;
@@ -59,11 +66,11 @@ nav .navbar-brand {
 .profile-image img{
     width: 100%
 }
-.profile-exp-1200{
-    display: none;
-
-}
-.profile-exp-700{
+.profile-exp{
+    margin-top: 5vw;
+    padding: 5%;
+    width: 90%;
+    background-color: white;
     display: block;
 }
 .work-experience-content {
@@ -78,10 +85,10 @@ nav .navbar-brand {
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp-700 h4 {
+    .profile-exp h4 {
         font-size: 16px;
     }
-    .profile-exp-700 span {
+    .profile-exp span {
         font-size: 10px;
     }
 }
@@ -92,10 +99,10 @@ nav .navbar-brand {
     .card-body h2 {
         font-size: 30px;
     }
-    .profile-exp-700 h4 {
+    .profile-exp h4 {
         font-size: 30px;
     }
-    .profile-exp-700 span {
+    .profile-exp span {
         font-size: 20px;
     }
     .row {
@@ -109,6 +116,8 @@ nav .navbar-brand {
     }
     
     .profile-description{
-        width: 90%
+        width: 90%;
+        height: fit-content;
+        padding: 3vh;
     }
 }

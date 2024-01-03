@@ -29,7 +29,9 @@ nav .navbar-brand {
 }
 .card-body p{
     margin-bottom: 5vw;
-    font-size: 18px;
+    font-size: 21.6px;
+    font-style: italic;
+    text-align: center;
 }
 .card-body h6 {
     align-items: center;
@@ -61,7 +63,7 @@ nav .navbar-brand {
     border: 20px solid gray;
 }
 .profile-description{
-    width: 50%
+    width: 60%
 }
 .profile-image img{
     width: 100%

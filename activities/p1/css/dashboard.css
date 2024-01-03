@@ -25,12 +25,12 @@ footer {
 
 
 .card-footer a {
-    color: rgb(83, 83, 83);
+    color: rgb(40, 34, 78);
     text-decoration: none;
     
 }
 .card-footer a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0)
 
 }
 
@@ -60,18 +60,18 @@ h1{
     text-align: center; 
 }
 h4{
-    color: rgb(0, 0, 0);
+    color: rgb(104, 104, 104);
     font-size: 20px;
     text-align: center;
 }
 p{
     font-family: 'wrestling';
     color: rgb(158, 158, 158);
-    font-size: 25;
+    font-size: 25px;
 }
 .card-body p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    color: rgb(0, 0, 0);
+    color: rgb(41, 2, 133);
     font-size: 16px;
     line-height: 15px;
     text-align: center;

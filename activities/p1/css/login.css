@@ -186,7 +186,7 @@ form{
 }
 .input-box1 i, .input-box2 i{
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 10%;
     transform: translate(-50%);
     font-size: 16px;
